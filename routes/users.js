@@ -146,4 +146,9 @@ router.post('/', cors.corswithOptions, function (req, res, next) {
 
 });
 
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Fetching Websites' });
+});
+
+
 module.exports = router;
