@@ -5,7 +5,7 @@ const app = express();
 const whitelist = ['http://localhost:3000', 'http://localhost:3001', 'https://llibrary-novel.herokuapp.com/']
 var corsOptionsDelegate = (req, callback) => {
     var corsOptions;
-    //console.log(whitelist.indexOf(req.header('Origin')));
+    console.log(whitelist.indexOf(req.header('Origin')));
     if (whitelist.indexOf(req.header('Origin')) !== -1) {
         corsOptions = { origin: true };
     } else {
