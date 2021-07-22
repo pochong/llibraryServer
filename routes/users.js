@@ -141,12 +141,12 @@ router.post('/', cors.corswithOptions, function (req, res, next) {
   }
   else {
     res.statusCode = 400;
-    res.end("URL is not supported as of this moment. Plase use the URL novelonomicon")
+    res.end("URL is not supported as of this moment.")
   }
 
 });
 
-router.get('/', function(req, res, next) {
+router.get('/', function (req, res, next) {
   res.render('index', { title: 'Fetching Websites' });
 });
 
